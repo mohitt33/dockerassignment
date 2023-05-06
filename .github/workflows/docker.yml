@@ -1,11 +1,11 @@
 name: Build and push Docker image
-  uses: docker/build-push-action@v2
-  with:
-    context: .
-    push: true
-    tags: your-dockerhub-username/image-name:tag
-    secrets:
-      - name: DOCKER_USERNAME
-        value: ${{ secrets.DOCKER_HUB_USERNAME }}
-      - name: DOCKER_PASSWORD
-        value: ${{ secrets.DOCKER_HUB_PASSWORD }}
+ uses: docker/build-push-action@v2
+ with:
+   context: .
+   push: true
+   tags: your-dockerhub-username/image-name:tag
+   secrets:
+     - name: DOCKER_USERNAME
+       value: ${{ secrets.DOCKER_HUB_USERNAME }}
+     - name: DOCKER_PASSWORD
+       value: ${{ secrets.DOCKER_HUB_PASSWORD }}
