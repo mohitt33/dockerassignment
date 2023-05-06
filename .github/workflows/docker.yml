@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.ommohit11 }}/clockbox:latest
+          tags: ${{ secrets.OMMOHIT11 }}/clockbox:latest
